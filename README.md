@@ -5,8 +5,8 @@ The files in this repository were used to configure the network depicted below.
 ![CloudNetwork drawio](https://user-images.githubusercontent.com/89550625/146598010-9aabf403-a936-4371-8dfc-ac491afc5690.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above.
-Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
-TODO: Enter the playbook file.
+Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
+Ansible/ansible.cfg
 This document contains the following details: - Description of the Topologu - Access Policies - ELK Configuration - Beats in Use - Machines Being Monitored - How to
 Use the Ansible Build
 Description of the Topology
