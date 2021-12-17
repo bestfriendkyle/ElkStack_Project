@@ -9,8 +9,13 @@ Alternatively, select portions of the YAML file may be used to install only cert
 
 https://github.com/bestfriendkyle/ElkStack_Project/blob/1e18de507f8370eca12dd4e561e796f08e9efdaa/Ansible/ansible.cfg
 
-This document contains the following details: - Description of the Topologu - Access Policies - ELK Configuration - Beats in Use - Machines Being Monitored - How to
-Use the Ansible Build
+This document contains the following details:
+- Description of the Topologu 
+- - Access Policies 
+- - ELK Configuration 
+- - Beats in Use 
+- - Machines Being Monitored 
+- - How to use the Ansible Build
 Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network. - TODO: What aspect of security do load balancers
