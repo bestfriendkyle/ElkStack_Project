@@ -1,11 +1,25 @@
 ## Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
-[CloudNetwork drawio](https://user-images.githubusercontent.com/89550625/146825764-4daf4ace-af11-433b-8b5e-b7f6781b5a3a.png)
+
+![CloudNetwork drawio](https://user-images.githubusercontent.com/89550625/146825868-b2752801-4712-4ae8-b983-e0b8878f41a6.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
-  - _TODO: Enter the playbook file._
+
+Ansible Docker Files
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/ansible.cfg
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/hosts
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/playbook.yml
+
+ElkStack Files
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/elkplaybook.yml
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/filebeat-config.yml
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/filebeat-playbook.yml
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/metricbeat-config.yml
+https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/metricbeat-playbook.yml
+
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
