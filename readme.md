@@ -44,10 +44,10 @@ The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| JumpBox-provisioner | Gateway  | 10.0.0.1   | Linux            |
-| Web-1   |          |            |                  |
-| Web-2    |          |            |                  |
-| ElkServer    |          |            |                  |
+| JumpBox-provisioner | Gateway  | 10.1.0.4   | Linux            |
+| Web-1   | Webserver | 10.1.0.7 | Linux |
+| Web-2    | Webserver| 10.1.0.8 | Linux |
+| ElkServer    | Cloud | 10.0.0.4 | Linux |
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
@@ -58,7 +58,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| JumpBox-Provisionser | No              | 10.0.0.1 10.0.0.2    |
 |          |                     |                      |
 |          |                     |                      |
 ### Elk Configuration
