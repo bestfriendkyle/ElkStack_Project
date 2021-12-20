@@ -27,20 +27,27 @@ This document contains the following details:
 - How to Use the Ansible Build
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Load balancing ensures that the application will be highly available, in addition to restricting traffic to the network.
+
+What aspect of security do load balancers protect?
+  The load balancers ensure that traffic is evenly distributed between Web-1 and Wed-2 virtual machines. Having two Virtual Machines also ensures that the DVWA is accessable if one of the VMs is down. This also protects availablity in the event of a DDoS attack.
+What is the advantage of a jump box?
+  The network takes advantage of a jump box provisioner. This allows for both Web-1 and Web-2 to be updated and modified from a single jump box. This preserves the continuity of the network and ensures that any changes and updates made to the DVWA VMs will be the same across the network. 
+  
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the metrics from the OS and system files.
+Filebeat: A lightweight shipper that forwards log data to your Kibana dashboard. Specifically, it looks for changes in the system files. 
+
+Metricbeat: A lightweight shipper that helps monitor each server by collecting metrics from system an services running on each of the servers. 
+
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| JumpBox-provisioner | Gateway  | 10.0.0.1   | Linux            |
+| Web-1   |          |            |                  |
+| Web-2    |          |            |                  |
+| ElkServer    |          |            |                  |
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
