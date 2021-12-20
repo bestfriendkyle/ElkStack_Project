@@ -19,6 +19,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _TODO: What does Metricbeat record?_
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
@@ -32,6 +33,7 @@ Only the _____ machine can accept connections from the Internet. Access to this 
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 A summary of the access policies in place can be found in the table below.
+
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
