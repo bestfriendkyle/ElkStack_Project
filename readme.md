@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 ![CloudNetwork drawio](https://user-images.githubusercontent.com/89550625/146825868-b2752801-4712-4ae8-b983-e0b8878f41a6.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 Ansible Docker Files
 https://github.com/bestfriendkyle/ElkStack_Project/blob/main/Ansible/ansible.cfg
@@ -50,16 +50,21 @@ The configuration details of each machine may be found below.
 | ElkServer    | Cloud | 10.0.0.4 | Linux |
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Only the JumpBox-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+97.117.83.***
+165.214.37.***
+97.117.150.***
+
+Machines within the network can only be accessed by SSH.
+Only the JumpBox-Provisioner was allowed to access the Webservers and Elk Stack via SSH. 
+The DVWA and Kibana were accessable throught a web browser from the IP addresses listed above. 
+
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| JumpBox-Provisionser | No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
+| Name     | Publicly Accessible | Allowed IP Addresses | Port |
+|----------|---------------------|----------------------|----------------------|
+| JumpBox-Provisionser | No              | 97.117.83.***,165.214.37.***,97.117.150.***    | 22 |
+| DVWA     | No                    |97.117.83.***,165.214.37.***,97.117.150.*** | 80 |
 |          |                     |                      |
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
