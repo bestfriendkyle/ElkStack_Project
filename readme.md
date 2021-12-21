@@ -63,12 +63,17 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses | Port |
 |----------|---------------------|----------------------|----------------------|
-| JumpBox-Provisionser | No              | 97.117.83.***,165.214.37.***,97.117.150.***    | 22 |
-| DVWA     | No                    |97.117.83.***,165.214.37.***,97.117.150.*** | 80 |
-|          |                     |                      |
+| JumpBox-Provisionser | No              | 97.117.83.###, 165.214.37.###, 97.117.150.### | 22 |
+| Web-1    | No                    |97.117.83.###, 165.214.37.###, 97.117.150.#### | 80 |
+| Web-2   | No                    |97.117.83.###, 165.214.37.###, 97.117.150.#### | 80 |
+|  Elk Stack        | No                    | 97.117.83.###, 165.214.37.###, 97.117.150.#### | 5601 |    
+
 ### Elk Configuration
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
+
+Automating the process includes the following advantages.
+-Quickly deploy or re-deploy the Elk Stack
+-Documentation of deployment is easly seen on the JumpBox-Provisioner.
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
